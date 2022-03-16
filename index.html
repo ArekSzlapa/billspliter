@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billsplitter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>BILLSPLITTER</h1>
+        <p>PODZIEL SIĘ RACHUNKAMI ZE ZNAJOMYMI! ;)</p>
+      </div>
+      <div class="content">
+        <div class="option">
+          <h2>Kwota do zapłaty:</h2>
+          <input class="overall" type="number" />
+        </div>
+        <div class="option">
+          <h2>Ilość osób</h2>
+          <input class="people" type="number" />
+        </div>
+        <div class="option">
+          <h2>Napiwek</h2>
+          <select name="tip" id="">
+            <option disabled selected="selected" value="empty">
+              Wybierz opcje
+            </option>
+            <option value="0.05">5%</option>
+            <option value="0.1">10%</option>
+            <option value="0.15">15%</option>
+            <option value="0.2">20%</option>
+          </select>
+        </div>
+        <button>Oblicz!</button>
+        <p class="msg"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
